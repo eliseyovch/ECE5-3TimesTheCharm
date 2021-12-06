@@ -54,7 +54,8 @@
         <img src='https://lh3.googleusercontent.com/vNW6gh4dy2k7hCG-Af2J6FTXQNaXXKWhknu-Ij8FvKvdrLKfD_bjZkQ6UuzOMnl5xhhMrgM3NBCBVrOKARgdDNu_eEvnLdpLnwlGpEghBCROCnXJ12UVeN3h7y65D4leY_f4Yjbr=w2400' class='imgmar'>
         <!-- to insert image replace the link to the image of choice ** note: keep the quotations -->
         <br>
-       
+       <p2>Picture on the left is our potentiometers breadboarded and working <br> 
+              Picture on right is our photoresistors breadboarded and working</p2>
         <br><br>
 
         <p class='box2'>
@@ -91,6 +92,8 @@
      width = "550"
     height = "500"
    class='imgmar'>
+        <p2>THis is our 3D print in solidworks<br>
+              This is our 3D print in the flesh</p2>
         <!-- to insert image replace the link to the image of choice ** note: keep the quotations -->
         <br>
        
@@ -126,7 +129,8 @@
              class='imgmar'>
         <!-- to insert image replace the link to the image of choice ** note: keep the quotations -->
         <br>
-      
+      <p2>Picture on the left is our robot somewhat assembled for the first time <br> 
+              Picture on the right is our motorshield connected and working</p2>
         <br><br>
 
         <p class='box2'>
@@ -154,7 +158,8 @@
              class='imgmar'>
         <!-- to insert image replace the link to the image of choice ** note: keep the quotations -->
         <br>
-     
+     <p2>Robot assembled but waiting for new print with the motorshield <br> 
+              
         <br><br>
 
         <p class='box2'>
@@ -221,6 +226,27 @@
         <br>
       </div> <!-- This is the end of div interactive -->
     </div> <!-- This is the end of div box1 -->
+  <!----------------------------------------  BUTTON 7 ---------------------------------------->
+
+    <div class='center'>
+      <button type='button' onclick="toggleText7()" class="btn">Final Bot + Competition</button>
+    </div>
+    <!--end of div class center -->
+
+    <div class="interactive" id='interactive7' style='display: none'>
+      <div class='box1'>
+        <br>
+        <p class='box2'>
+          1st Place in Frequency Sweep
+        </p> <!-- p is paragraph -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/IZFz_SAygP8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+           <img src='https://lh3.googleusercontent.com/Nznxw1SFPcp6WxVG4arGTAW-rNa3IhMVuDDpd7yXR9A9qvk7H5vK2wDF-itK6pSiMQYnatK_CgbF3YIRntER8ficpuKx5EXWfAvRw07o8yGpzVI0fGH0bOI22K7f5Yv27k1CydEdUg=w2400' 
+    width = "750"
+    height = "600"
+             class='imgmar'>
+      </div> <!-- This is the end of div interactive -->
+    </div> <!-- This is the end of div box1 -->
 
     <!--   *********************  BUTTONS END *********************   -->
 
@@ -283,6 +309,14 @@
 
   function toggleText6(text) {
     var text = document.getElementById("interactive6");
+    if (text.style.display === "none") {
+      text.style.display = "block";
+    } else {
+      text.style.display = "none";
+    }
+  }
+  function toggleText7(text) {
+    var text = document.getElementById("interactive7");
     if (text.style.display === "none") {
       text.style.display = "block";
     } else {
